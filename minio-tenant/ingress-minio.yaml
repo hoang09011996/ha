@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minio-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: miniotenant.rdp.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: minio-dev-console
+                port:
+                  number: 9443
+
+

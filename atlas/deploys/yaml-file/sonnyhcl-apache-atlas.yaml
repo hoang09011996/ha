@@ -1,0 +1,67 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: atlasv3-data-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: atlas
+spec:
+  selector:
+    matchLabels:
+      app: atlas
+  replicas: 1
+  serviceName: atlas
+  template:
+    metadata:
+      labels:
+        app: atlas
+    spec:                            
+      containers:
+        - name: atlas
+          image: sonnyhcl/apache-atlas:release-2.2.0
+          ports:
+            - containerPort: 21000
+            - containerPort: 2181
+            - containerPort: 9092
+          env:
+            - name: ATLAS_SERVER_OPTS
+              value: "-Xmx1024m"
+          volumeMounts:
+            - mountPath: /var/atlasv3
+              name: atlasv3-data
+      volumes:
+        - name: atlasv3-data
+          persistentVolumeClaim:
+            claimName: atlasv3-data-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: atlas
+spec:
+  type: LoadBalancer
+  selector:
+    app: atlas
+  ports:
+    - name: port-21000
+      port: 21000
+      targetPort: 21000
+      protocol: TCP
+    - name: port-2181
+      port: 2181
+      targetPort: 2181
+      protocol: TCP
+    - name: port-9092
+      port: 9092
+      targetPort: 9092
+      protocol: TCP
+

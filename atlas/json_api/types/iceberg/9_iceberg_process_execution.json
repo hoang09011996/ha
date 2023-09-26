@@ -1,0 +1,152 @@
+{
+    "entityDefs": [
+        {
+            "category": "ENTITY",
+            "createdBy": "root",
+            "updatedBy": "root",
+            "createTime": 1671133411000,
+            "updateTime": 1671133411000,
+            "version": 1,
+            "name": "iceberg_process_execution",
+            "description": "iceberg_process_execution",
+            "typeVersion": "1.1",
+            "serviceType": "iceberg",
+            "options": {
+                "displayTextAttribute": "queryText"
+            },
+            "attributeDefs": [
+                {
+                    "name": "startTime",
+                    "typeName": "date",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 1,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "endTime",
+                    "typeName": "date",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 1,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "userName",
+                    "typeName": "string",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 1,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": true,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "queryText",
+                    "typeName": "string",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 1,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "queryGraph",
+                    "typeName": "string",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "queryId",
+                    "typeName": "string",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 1,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "queryPlan",
+                    "typeName": "string",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 1,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "hostName",
+                    "typeName": "string",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 1,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": true,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                }
+            ],
+            "superTypes": [
+                "ProcessExecution"
+            ],
+            "subTypes": [],
+            "relationshipAttributeDefs": [
+                {
+                    "name": "process",
+                    "typeName": "iceberg_process",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": -1,
+                    "valuesMaxCount": -1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "iceberg_process_process_executions",
+                    "isLegacyAttribute": false
+                },
+                {
+                    "name": "meanings",
+                    "typeName": "array<AtlasGlossaryTerm>",
+                    "isOptional": true,
+                    "cardinality": "SET",
+                    "valuesMinCount": -1,
+                    "valuesMaxCount": -1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "AtlasGlossarySemanticAssignment",
+                    "isLegacyAttribute": false
+                }
+            ],
+            "businessAttributeDefs": {}
+        }
+    ]
+}

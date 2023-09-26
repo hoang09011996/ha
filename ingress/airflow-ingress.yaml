@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.org/websocket-services: airflow-webserver
+  name: airflow.raffles.com.vn
+  namespace: airflow
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: airflow.raffles.com.vn
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: airflow-webserver
+            port:
+              number: 8080
+

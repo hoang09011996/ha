@@ -1,0 +1,54 @@
+{
+  "structDefs": [
+      {
+          "category": "STRUCT",
+          "createdBy": "root",
+          "updatedBy": "root",
+          "createTime": 1671133410923,
+          "updateTime": 1671133426800,
+          "version": 2,
+          "name": "iceberg_serde",
+          "description": "iceberg_serde",
+          "typeVersion": "1.1",
+          "serviceType": "iceberg",
+          "attributeDefs": [
+              {
+                  "name": "name",
+                  "typeName": "string",
+                  "isOptional": true,
+                  "cardinality": "SINGLE",
+                  "valuesMinCount": 0,
+                  "valuesMaxCount": 1,
+                  "isUnique": false,
+                  "isIndexable": false,
+                  "includeInNotification": false,
+                  "searchWeight": -1
+              },
+              {
+                  "name": "serializationLib",
+                  "typeName": "string",
+                  "isOptional": true,
+                  "cardinality": "SINGLE",
+                  "valuesMinCount": 0,
+                  "valuesMaxCount": 1,
+                  "isUnique": false,
+                  "isIndexable": false,
+                  "includeInNotification": false,
+                  "searchWeight": -1
+              },
+              {
+                  "name": "parameters",
+                  "typeName": "map<string,string>",
+                  "isOptional": true,
+                  "cardinality": "SINGLE",
+                  "valuesMinCount": 0,
+                  "valuesMaxCount": 1,
+                  "isUnique": false,
+                  "isIndexable": false,
+                  "includeInNotification": false,
+                  "searchWeight": -1
+              }
+          ]
+      }
+  ]
+}

@@ -1,0 +1,25 @@
+apiVersion: flink.apache.org/v1beta1
+kind: FlinkDeployment
+metadata:
+  name: pyflink-fraud-model
+spec:
+  image: quanghuy98/flink-test-model:1.0.17
+  imagePullPolicy: Always	
+  flinkVersion: v1_15
+  flinkConfiguration:
+    taskmanager.numberOfTaskSlots: "1"
+  serviceAccount: flink
+  jobManager:
+    resource:
+      memory: "1024m"
+      cpu: 1
+  taskManager:
+    resource:
+      memory: "1024m"
+      cpu: 1
+  job:
+    jarURI: local:///opt/flink/opt/flink-python-1.17.1.jar
+    entryClass: "org.apache.flink.client.python.PythonDriver"
+    args: ["-pyclientexec", "/usr/local/bin/python3", "-py", "/opt/flink/usrlib/test-model-hoanganh.py"]
+    parallelism: 1
+    upgradeMode: stateless

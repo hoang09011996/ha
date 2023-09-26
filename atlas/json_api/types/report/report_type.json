@@ -1,0 +1,21 @@
+{
+    "entityDefs" : [
+      {
+        "superTypes" : [ "DataSet" ],
+        "category" : "ENTITY",
+        "name" : "report",
+        "description" : "raffles data platform: report ",
+        "typeVersion" : "1.0",
+        "attributeDefs" : [
+          {
+            "name" : "report name",
+            "typeName" : "string" 
+          },
+          {
+            "name" : "report description",
+            "typeName" : "string" 
+          }
+        ]
+      }
+    ]
+  }

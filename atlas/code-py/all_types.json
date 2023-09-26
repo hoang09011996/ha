@@ -1,0 +1,1332 @@
+[
+    {
+      "guid": "c0984d61-aa27-4d83-8170-24f0c2941c5c",
+      "name": "AtlasGlossaryTermRelationshipStatus",
+      "serviceType": "atlas_core",
+      "category": "ENUM"
+    },
+    {
+      "guid": "3735320a-28d7-4cbf-84c0-015360937324",
+      "name": "atlas_operation",
+      "serviceType": "atlas_core",
+      "category": "ENUM"
+    },
+    {
+      "guid": "c5c49838-3a01-4f10-a639-26aced322c38",
+      "name": "adls_gen2_authentication_method",
+      "serviceType": "azure",
+      "category": "ENUM"
+    },
+    {
+      "guid": "d73046ee-c59f-4e96-9e0a-98ad00c2ee37",
+      "name": "file_action",
+      "serviceType": "file_system",
+      "category": "ENUM"
+    },
+    {
+      "guid": "61a6910d-6f53-4e22-9b60-d31a3da29bcb",
+      "name": "ml_model_deployment_status",
+      "category": "ENUM"
+    },
+    {
+      "guid": "61ddb357-e64c-4acc-a2c5-eaf9091365ac",
+      "name": "AtlasGlossaryTermAssignmentStatus",
+      "serviceType": "atlas_core",
+      "category": "ENUM"
+    },
+    {
+      "guid": "d681dd47-67a6-4a5a-9486-fefda4d44312",
+      "name": "hive_principal_type",
+      "serviceType": "hive",
+      "category": "ENUM"
+    },
+    {
+      "guid": "5f3969b1-4b63-447f-8c42-37216c7c446a",
+      "name": "ozone_storage_type",
+      "serviceType": "ozone",
+      "category": "ENUM"
+    },
+    {
+      "guid": "365ecbb7-212e-4291-a218-5c8e18af18f4",
+      "name": "ozone_replication_type",
+      "serviceType": "ozone",
+      "category": "ENUM"
+    },
+    {
+      "guid": "caf29976-36dd-4077-8162-7d8badfdafef",
+      "name": "adls_gen2_replication",
+      "serviceType": "azure",
+      "category": "ENUM"
+    },
+    {
+      "guid": "5cd4ddf1-4d7f-40df-8d63-c327b391be61",
+      "name": "adls_gen2_performance",
+      "serviceType": "azure",
+      "category": "ENUM"
+    },
+    {
+      "guid": "c862d81b-2b80-4f6f-9cff-685ba9c8ae0d",
+      "name": "iceberg_principal_type",
+      "serviceType": "iceberg",
+      "category": "ENUM"
+    },
+    {
+      "guid": "ff8e67cb-fe59-419e-a01c-55cd18f102c4",
+      "name": "adls_gen2_access_tier",
+      "serviceType": "azure",
+      "category": "ENUM"
+    },
+    {
+      "guid": "716b067e-ed2f-437a-b209-e53eb854390e",
+      "name": "iceberg_serde",
+      "serviceType": "iceberg",
+      "category": "STRUCT"
+    },
+    {
+      "guid": "ec7e8551-8c76-42a0-b0c2-0187188dd5e0",
+      "name": "aws_cloud_watch_metric",
+      "serviceType": "aws",
+      "category": "STRUCT"
+    },
+    {
+      "guid": "d792a436-d188-4258-89a7-4d3135f390e0",
+      "name": "aws_tag",
+      "serviceType": "aws",
+      "category": "STRUCT"
+    },
+    {
+      "guid": "eb48b6f1-f0ca-4d18-819b-87223a115db5",
+      "name": "aws_s3_access_policy",
+      "serviceType": "aws",
+      "category": "STRUCT"
+    },
+    {
+      "guid": "5c4c672d-6da0-4e93-aeaf-3c09536aa2db",
+      "name": "ozone_key_location",
+      "serviceType": "ozone",
+      "category": "STRUCT"
+    },
+    {
+      "guid": "ccb9e835-f1de-4aa7-a89b-07ff8fa04231",
+      "name": "hive_serde",
+      "serviceType": "hive",
+      "category": "STRUCT"
+    },
+    {
+      "guid": "3f6cf2c7-2c36-47e2-9f83-ff614075c387",
+      "name": "hive_order",
+      "serviceType": "hive",
+      "category": "STRUCT"
+    },
+    {
+      "guid": "e404271f-bf4b-4471-a9a0-12092437c902",
+      "name": "aws_s3_bucket_lifeCycleRule",
+      "serviceType": "aws",
+      "category": "STRUCT"
+    },
+    {
+      "guid": "3963fb00-f80d-41eb-a00e-d8652d29bbfe",
+      "name": "fs_permissions",
+      "serviceType": "file_system",
+      "category": "STRUCT"
+    },
+    {
+      "guid": "18cc5a0e-29f7-4a62-9170-8ff22febce53",
+      "name": "iceberg_order",
+      "serviceType": "iceberg",
+      "category": "STRUCT"
+    },
+    {
+      "guid": "d18c6bd0-7892-4cf2-bc78-e42a60df2c9b",
+      "name": "Balance_Deposit",
+      "category": "CLASSIFICATION"
+    },
+    {
+      "guid": "1563b5b5-265c-406e-b1b0-220a8dd16842",
+      "name": "Availability",
+      "category": "CLASSIFICATION"
+    },
+    {
+      "guid": "64d34e74-fe5e-4777-a410-b38bcb9df502",
+      "name": "Balance_Loan",
+      "category": "CLASSIFICATION"
+    },
+    {
+      "guid": "213eea24-f3d9-4f2b-b201-17a52bdad457",
+      "name": "Available",
+      "category": "CLASSIFICATION"
+    },
+    {
+      "guid": "0bb56bb0-19bb-4e06-a1ea-5c87dfd9ecd4",
+      "name": "Balance",
+      "category": "CLASSIFICATION"
+    },
+    {
+      "guid": "ad4f908b-dbf5-4b40-9fed-38d3e896010b",
+      "name": "Not available",
+      "category": "CLASSIFICATION"
+    },
+    {
+      "guid": "78c98465-eb9f-4a8c-8c7b-8db74be47103",
+      "name": "DataSet",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "bbdf57c7-4d3a-4445-8bc3-d33d96cbd512",
+      "name": "hive_table",
+      "serviceType": "hive",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "1357b56f-c14b-476f-b67a-4f9e94b48458",
+      "name": "ozone_volume",
+      "serviceType": "ozone",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "7e56a37f-de72-400b-9395-0a50930ec259",
+      "name": "spark_column",
+      "serviceType": "spark",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "87acd37e-2fdd-4369-99a0-805ceae2b317",
+      "name": "gcp_storage_child",
+      "serviceType": "gcp",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "88017ba4-d07a-42bc-9ddb-61e2148d61be",
+      "name": "iceberg_table",
+      "serviceType": "iceberg",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "96e6d24b-91fa-438b-bd6b-7e80b73729d3",
+      "name": "storm_node",
+      "serviceType": "storm",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "899c5486-f3f5-48ae-b3c3-8c07327a37c8",
+      "name": "Referenceable",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "c67fd17b-abd7-4219-8d67-b74887a18223",
+      "name": "spark_table",
+      "serviceType": "spark",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "a59e0f7c-f61c-4256-9759-4f6fc6c53ca3",
+      "name": "rdbms_column",
+      "serviceType": "rdbms",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "4bc9119d-0327-492f-9de5-7af6044f4dd5",
+      "name": "Asset",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "1c0f925d-d04a-46bb-aeb7-22ada38387dd",
+      "name": "avro_collection",
+      "serviceType": "avro",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "9c53d686-32e6-4637-8406-53476f771fe4",
+      "name": "adls_gen2_parent",
+      "serviceType": "azure",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "3f071634-3c23-4d78-915d-24a487465999",
+      "name": "aws_s3_v2_object",
+      "serviceType": "aws",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "1df66ec4-c21b-4340-bc0b-950d925c489a",
+      "name": "hive_column",
+      "serviceType": "hive",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "f684d0bf-8af6-4091-964e-72e3c0bc6e4d",
+      "name": "spark_column_lineage",
+      "serviceType": "spark",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "17eb502e-3751-46c9-8556-1e5f6ef2049d",
+      "name": "ml_model_deployment",
+      "serviceType": "ml",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "42d1d0ae-452d-42cd-a48b-fdee47272d67",
+      "name": "iceberg_db",
+      "serviceType": "iceberg",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "94a108a9-1092-4da9-a566-96344e0a98e4",
+      "name": "flink_application",
+      "serviceType": "flink",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "b2e5582e-0c8a-4cc4-90d1-03853f01d7b6",
+      "name": "iceberg_process_execution",
+      "serviceType": "iceberg",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "70f95682-78e7-4371-a5c0-449547bb9626",
+      "name": "adls_gen2_account",
+      "serviceType": "azure",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "1a8bd81a-efe3-4184-8fd5-778c18d2da31",
+      "name": "__AtlasUserSavedSearch",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "45ffa5c0-57c9-44e9-bc75-d96e0b1c7443",
+      "name": "gcp_storage_object",
+      "serviceType": "gcp",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "3f24f3b4-a7cc-4ac8-af35-621f91e0e561",
+      "name": "spark_ml_model",
+      "serviceType": "spark",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "7919ae37-6767-4eb0-a6b4-c6238f665de1",
+      "name": "__internal",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "710df86c-3ec1-4389-ac93-255e62b0e276",
+      "name": "ml_project",
+      "serviceType": "ml",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "c83ae10e-a74f-465e-83ba-96f91a40da90",
+      "name": "avro_type",
+      "serviceType": "avro",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "238c7ee0-4679-4915-811d-4690dce377d6",
+      "name": "aws_s3_object",
+      "serviceType": "aws",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "04451831-50bd-4f72-888d-da469cfc8dc1",
+      "name": "aws_s3_bucket",
+      "serviceType": "aws",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "d5c8bfaf-d80b-4af7-9447-d947279871e5",
+      "name": "fs_path",
+      "serviceType": "file_system",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "e7ea6b67-8f45-4779-bc97-f31f9827f557",
+      "name": "spark_storagedesc",
+      "serviceType": "spark",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "35ce01ec-ff2c-4779-84c1-cf70e0d459f9",
+      "name": "falcon_feed_replication",
+      "serviceType": "falcon",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "026f12cc-8ad1-4b34-ab3a-6dd56bda2b23",
+      "name": "rdbms_foreign_key",
+      "serviceType": "rdbms",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "d4ad6bf0-9c72-49cf-9876-2f4bf4a7fc25",
+      "name": "aws_s3_v2_bucket",
+      "serviceType": "aws",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "f2cd43c7-6178-485f-b8cd-873c75ae02f0",
+      "name": "avro_fixed",
+      "serviceType": "avro",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "b4a488db-38f4-4260-b139-349b8fc1c7a4",
+      "name": "falcon_feed_creation",
+      "serviceType": "falcon",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "6c9ba41a-be6f-482c-bb66-90649ab20a5d",
+      "name": "gcp_storage_bucket",
+      "serviceType": "gcp",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "c7cb5ab6-e3a5-4793-9975-b8568487c0d0",
+      "name": "impala_process_execution",
+      "serviceType": "impala",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "92577de9-af4c-4dbd-831b-ccece1f01926",
+      "name": "adls_gen2_child",
+      "serviceType": "azure",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "968a6005-c3ee-4d30-ab6e-7f8f49cf8dcb",
+      "name": "hive_db_ddl",
+      "serviceType": "hive",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "55de4e29-7b3e-40db-a586-e87308e8fddb",
+      "name": "ml_model_train_build_process",
+      "serviceType": "ml",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "9bca4e1f-be2f-41e6-9a2c-1eed7e035957",
+      "name": "__AtlasUserProfile",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "2498b288-3ba2-4c07-b968-a23cecb2ee70",
+      "name": "aws_s3_pseudo_dir",
+      "serviceType": "aws",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "d15bc333-946f-4541-99b4-3ab658500d00",
+      "name": "hbase_namespace",
+      "serviceType": "hbase",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "d2cc775d-58b7-4190-a194-6055507aed89",
+      "name": "sqoop_dbdatastore",
+      "serviceType": "sqoop",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "4dd88bcc-647c-469c-8813-7ee91017ab8c",
+      "name": "ml_project_create_process",
+      "serviceType": "ml",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "627ee50b-f360-4bf0-8646-572b2db79f61",
+      "name": "hive_process",
+      "serviceType": "hive",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "28492786-9929-4c0a-907f-8483d2ba59c1",
+      "name": "iceberg_column",
+      "serviceType": "iceberg",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "c6072f98-2e18-4b54-bd3e-a334e32b02d6",
+      "name": "impala_process",
+      "serviceType": "impala",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "298f6ec8-575b-4d32-aebd-8ce8ccd7bc07",
+      "name": "rdbms_instance",
+      "serviceType": "rdbms",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "3bc685e7-1d61-465b-8ff4-ba21018c8b1e",
+      "name": "ozone_child",
+      "serviceType": "ozone",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "8496a49f-5af4-4b8e-960f-c072680eac4b",
+      "name": "Infrastructure",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "6dba3ffe-8dc7-49e3-b746-61fcbcd091dc",
+      "name": "storm_spout",
+      "serviceType": "storm",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "1967440c-c488-4692-8251-f754be0010ea",
+      "name": "hive_table_ddl",
+      "serviceType": "hive",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "3a1e8f6e-7637-4e63-8294-3e1002442c8b",
+      "name": "iceberg_db_ddl",
+      "serviceType": "iceberg",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "4e25d2b4-48ff-4f5d-88a1-228a4231d3b6",
+      "name": "Path",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "c87cf0ac-340c-43ce-bc13-b97139cd69db",
+      "name": "iceberg_table_ddl",
+      "serviceType": "iceberg",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "484995ec-0b7d-4eaa-bb02-91efa32e866f",
+      "name": "ozone_bucket",
+      "serviceType": "ozone",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "8bbac230-e8f8-4f37-9629-4e55bf8363a8",
+      "name": "kafka_topic",
+      "serviceType": "kafka",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "3cc5147a-c1e5-4c22-be09-d924b6d1231d",
+      "name": "ml_model_deploy_process",
+      "serviceType": "ml",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "c79af720-dcd3-4ce6-a77a-fa9981d615b3",
+      "name": "AtlasGlossaryTerm",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "752b3663-0480-454e-8fa0-7a70ef54a3cc",
+      "name": "hive_column_lineage",
+      "serviceType": "hive",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "e4184b29-7308-42dc-a3f3-47ab6516f1a9",
+      "name": "rdbms_index",
+      "serviceType": "rdbms",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "e1489d16-0087-4d3f-93aa-1d75d6553af7",
+      "name": "aws_s3_v2_directory",
+      "serviceType": "aws",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "bab09851-c01d-41db-9a8f-a2a192bf4943",
+      "name": "ml_model_build",
+      "serviceType": "ml",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "94496d30-d831-4ca6-86c1-67e91acfb5a8",
+      "name": "adls_gen2_container",
+      "serviceType": "azure",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "782e755e-3fed-4396-a7bb-bfa68bc147cf",
+      "name": "__ExportImportAuditEntry",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "c91643f9-9dbc-40b7-881f-7f99ea312a2d",
+      "name": "aws_s3_v2_container",
+      "serviceType": "aws",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "cb766da0-9dcc-466d-b9fd-52039a8aaf21",
+      "name": "Process",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "709deda8-a176-40e2-83e7-ab0aff23bbc1",
+      "name": "avro_primitive",
+      "serviceType": "avro",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "10fc07b3-27e5-4441-ad52-474886950be6",
+      "name": "aws_s3_v2_contained",
+      "serviceType": "aws",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "b54be2d1-282a-4fea-b2a9-2cddbcf869ce",
+      "name": "impala_column_lineage",
+      "serviceType": "impala",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "c9ac8f6e-6d5a-4569-b167-1d8243cdcc27",
+      "name": "falcon_feed",
+      "serviceType": "falcon",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "2bd92279-e243-42b5-ab90-802aa9954ede",
+      "name": "jms_topic",
+      "serviceType": "kafka",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "ad1587b7-3931-47d5-b939-ea7d27f69b0e",
+      "name": "hbase_column_family",
+      "serviceType": "hbase",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "3bfcae43-c9b5-4cf8-a3f3-23cd0acd074c",
+      "name": "hive_process_execution",
+      "serviceType": "hive",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "b03eae97-868a-40ab-8a03-7ddf504df4e5",
+      "name": "avro_schema",
+      "serviceType": "avro",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "3733b4d9-30d5-46e8-ad7a-878d2ab3ab9b",
+      "name": "__AtlasMetricsStat",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "12182ebe-a57a-4fe6-8fff-a3e5242a4d50",
+      "name": "flink_process",
+      "serviceType": "flink",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "03d55001-9320-4067-a24e-04e06800b706",
+      "name": "iceberg_column_lineage",
+      "serviceType": "iceberg",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "e467a648-29c4-46f4-a18e-876b9f49538e",
+      "name": "spark_process",
+      "serviceType": "spark",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "4796ba79-17ab-4886-8d72-238081b9182d",
+      "name": "spark_ml_pipeline",
+      "serviceType": "spark",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "290ce0a6-bc3c-4ccf-bf1f-9d077642103f",
+      "name": "avro_record",
+      "serviceType": "avro",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "b55f53f4-bcc6-410b-9e46-5ff6d7719ab8",
+      "name": "aws_s3_v2_base",
+      "serviceType": "aws",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "9b602849-3918-4035-8cab-b308ae1a0977",
+      "name": "adls_gen2_directory",
+      "serviceType": "azure",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "a5ad024b-948b-4d70-8972-3d54e6e95b8e",
+      "name": "spark_application",
+      "serviceType": "spark",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "626f7896-048e-44bb-bccb-7d2297f39649",
+      "name": "gcp_storage_parent",
+      "serviceType": "gcp",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "9a80b3a4-6e98-4aac-9fd5-1e3da03f2dae",
+      "name": "__AtlasAuditEntry",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "d2cbf646-5e08-49fb-95eb-744e61757038",
+      "name": "storm_bolt",
+      "serviceType": "storm",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "c3ed0341-f584-45ff-96ac-6f4e6cec0204",
+      "name": "falcon_cluster",
+      "serviceType": "falcon",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "f2014659-d8d3-4b3b-913c-c5676679fbdf",
+      "name": "falcon_process",
+      "serviceType": "falcon",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "f00d0bfc-7378-43e1-9408-a2f2c38cd066",
+      "name": "iceberg_storagedesc",
+      "serviceType": "iceberg",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "82827d84-e9fb-43d2-847a-a48e45263bde",
+      "name": "gcp_storage_base",
+      "serviceType": "gcp",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "83ed3f9b-ce24-432b-95ea-805d35ae3f42",
+      "name": "spark_ml_directory",
+      "serviceType": "spark",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "cd10bdc6-4683-478a-9c02-49aee85e637e",
+      "name": "AtlasGlossaryCategory",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "79bdadc6-8e23-4a71-8a95-859fbd0eb28c",
+      "name": "avro_field",
+      "serviceType": "avro",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "d5ec98ff-441b-4a8b-8f57-42606bd3f771",
+      "name": "hive_db",
+      "serviceType": "hive",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "c2f25396-d40f-44b9-a06e-960dabc78fd5",
+      "name": "hbase_column",
+      "serviceType": "hbase",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "faf44441-4118-48a7-9f10-a4440e861efc",
+      "name": "AtlasServer",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "81db522b-da35-429c-85e4-0833b8a7f470",
+      "name": "gcp_storage_virtual_directory",
+      "serviceType": "gcp",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "ec4f062a-d3ef-455c-9a7e-39d9c9982c8a",
+      "name": "hbase_table",
+      "serviceType": "hbase",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "fd8c41e2-3118-423c-8256-ee475d533258",
+      "name": "ProcessExecution",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "8589c92f-22f1-48b3-9f73-585ca08a1e47",
+      "name": "rdbms_table",
+      "serviceType": "rdbms",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "8e2aa56a-76cf-4dd6-acfa-40479e7e5e8d",
+      "name": "storm_topology",
+      "serviceType": "storm",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "2ce42354-9d81-4d83-b057-597724fd02c1",
+      "name": "oracle_database",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "abe87682-4421-45ef-adb3-781eb05d781f",
+      "name": "rdbms_db",
+      "serviceType": "rdbms",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "30e20120-6f9e-4831-8ac7-49dedd72ae0d",
+      "name": "flink_application_processes",
+      "serviceType": "flink",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "db77465e-f4fb-46b4-ae82-338297a0c0e2",
+      "name": "adls_gen2_blob",
+      "serviceType": "azure",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "f0666974-f8f5-492b-8959-e435867ab56a",
+      "name": "ddl",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "74c2db8d-2bd9-47c6-a420-e017f1481619",
+      "name": "hive_storagedesc",
+      "serviceType": "hive",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "d5c2283a-4b6e-4633-bca1-a1a2bf8cb746",
+      "name": "AtlasGlossary",
+      "serviceType": "atlas_core",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "21d10852-39c8-41ad-b01f-89149b1b9ad6",
+      "name": "hdfs_path",
+      "serviceType": "file_system",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "2f3a6570-c613-4276-87e4-8c33cfc9624e",
+      "name": "sqoop_process",
+      "serviceType": "sqoop",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "0f8cdd03-2cc6-4ecf-a5c5-6b03f8ec4409",
+      "name": "iceberg_process",
+      "serviceType": "iceberg",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "9c0f196b-669e-456c-9d86-0799bd54c892",
+      "name": "ozone_parent",
+      "serviceType": "ozone",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "9009b45f-c472-4877-9f09-0443d5d02231",
+      "name": "ozone_key",
+      "serviceType": "ozone",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "fe9a6ce3-ddad-4627-a4f8-fa37ba80369c",
+      "name": "avro_enum",
+      "serviceType": "avro",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "158fd42b-7ada-479b-a608-5adf7dccbb59",
+      "name": "spark_db",
+      "serviceType": "spark",
+      "category": "ENTITY"
+    },
+    {
+      "guid": "00a3ca78-2328-4938-bf56-9835765c3332",
+      "name": "storm_topology_nodes",
+      "serviceType": "storm",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "ab578f64-faaa-44ed-a3d5-ee08ae2ec911",
+      "name": "avro_schema_associatedEntities",
+      "serviceType": "avro",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "c8e75e20-e3f1-438d-a71e-2b007e9ffd4b",
+      "name": "falcon_feed_cluster",
+      "serviceType": "falcon",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "1b4ba644-a04b-4964-918e-d8f41b481094",
+      "name": "hive_db_ddl_queries",
+      "serviceType": "hive",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "7a2d3ee7-3d2c-4961-967f-53ce550d89a6",
+      "name": "hive_process_column_lineage",
+      "serviceType": "hive",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "50e823b7-79c9-4595-a781-3332a90e586d",
+      "name": "ml_build_deployment",
+      "serviceType": "ml",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "f7dd61cc-64a4-47c8-a683-94a5c3f33f86",
+      "name": "avro_record_fields",
+      "serviceType": "avro",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "959f5c14-d0af-419c-a20e-f43b7cd50fda",
+      "name": "rdbms_table_foreign_key",
+      "serviceType": "rdbms",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "10d5dacc-5ee0-4d4d-83f1-b1cb8fe72167",
+      "name": "AtlasGlossarySynonym",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "14287922-b65b-44cb-9e7b-a810119f3d5a",
+      "name": "hbase_column_family_columns",
+      "serviceType": "hbase",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "82b57339-cc1b-4e80-921b-f29e2668df84",
+      "name": "AtlasGlossaryReplacementTerm",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "0cc6e1d9-8347-49d2-8dad-fcb57dc786c8",
+      "name": "iceberg_db_location",
+      "serviceType": "iceberg",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "efaa9aff-a8a0-42f3-95cc-8ad5afb41933",
+      "name": "ozone_volume_buckets",
+      "serviceType": "ozone",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "49f96dc1-0c47-4ded-b8c8-53d1365c0bd3",
+      "name": "iceberg_table_ddl_queries",
+      "serviceType": "iceberg",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "24c0dfa1-2e8a-407e-9642-6d2729e4605e",
+      "name": "rdbms_foreign_key_key_columns",
+      "serviceType": "rdbms",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "f206c96c-f16d-4788-8d04-41adcd0ac579",
+      "name": "spark_table_columns",
+      "serviceType": "spark",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "eac94ba8-4290-41d6-8ead-7c60efbd31f4",
+      "name": "spark_ml_model_ml_directory",
+      "serviceType": "spark",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "47f2d2e6-cdc0-4b47-884c-1a6b0fe2da9e",
+      "name": "adls_gen2_parent_children",
+      "serviceType": "azure",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "ab779b1c-5aea-4bde-bf83-ef9ce57735a2",
+      "name": "__AtlasUserProfile_savedsearches",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "b8100a6e-1fc5-4683-9392-b7e620304bb4",
+      "name": "falcon_cluster_feed_creation",
+      "serviceType": "falcon",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "717e82d9-d5f1-45f4-9fba-f13d710f71cc",
+      "name": "rdbms_foreign_key_table_references",
+      "serviceType": "rdbms",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "c1ae454b-06b1-4d1e-a327-d4a6313ce3d8",
+      "name": "rdbms_foreign_key_column_references",
+      "serviceType": "rdbms",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "06e82d6a-d299-42b9-8477-b0be67f34f04",
+      "name": "iceberg_table_columns",
+      "serviceType": "iceberg",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "b9ddba4c-a636-4288-b234-fccc771a2a58",
+      "name": "spark_ml_model_dataset",
+      "serviceType": "spark",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "cb2d2262-8f2b-4050-a932-2c70b40e538c",
+      "name": "hbase_table_namespace",
+      "serviceType": "hbase",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "e165a97b-b20a-42fd-94d3-ebb74e7d60c6",
+      "name": "rdbms_db_tables",
+      "serviceType": "rdbms",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "55a84d65-1738-447e-8bc0-f62eac212467",
+      "name": "ozone_parent_children",
+      "serviceType": "ozone",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "16e1653a-4d69-47c6-b80c-3b977fae83b3",
+      "name": "avro_field_types",
+      "serviceType": "avro",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "0397af76-5acf-4587-b951-b9bb1e3f4eae",
+      "name": "falcon_cluster_process",
+      "serviceType": "falcon",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "b06422f3-f261-41cf-8cd9-20589fbedf08",
+      "name": "hive_table_storagedesc",
+      "serviceType": "hive",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "a7208b10-f680-491b-9036-7d90f688bfa1",
+      "name": "hive_table_columns",
+      "serviceType": "hive",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "5c20a8d1-3886-4a52-ac2e-452e52b4042f",
+      "name": "iceberg_table_partitionkeys",
+      "serviceType": "iceberg",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "297d97c1-a239-449b-a6bd-58b1f86a387c",
+      "name": "hive_table_partitionkeys",
+      "serviceType": "hive",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "69dad70f-6bff-461b-9b28-5df855cf8700",
+      "name": "rdbms_table_columns",
+      "serviceType": "rdbms",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "5723a356-329d-49f0-abc2-f2e70fd50969",
+      "name": "iceberg_process_column_lineage",
+      "serviceType": "iceberg",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "61a14449-18cb-428c-b670-109cfece135a",
+      "name": "spark_application_processes",
+      "serviceType": "spark",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "c6a76597-45df-4cdd-975e-fa499a1283c5",
+      "name": "impala_process_column_lineage",
+      "serviceType": "impala",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "e150ed93-113d-43e8-89d2-c5c8487b5c9d",
+      "name": "AtlasGlossaryTranslation",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "88d5405a-367f-4ac8-a499-03aff510cc31",
+      "name": "adls_gen2_account_containers",
+      "serviceType": "azure",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "a7ff6226-fe20-438a-ad75-99494f18d0a4",
+      "name": "AtlasGlossaryCategoryHierarchyLink",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "c2a2c8be-bc50-44d0-8aff-ccf97efa8eb7",
+      "name": "aws_s3_bucket_aws_s3_pseudo_dirs",
+      "serviceType": "aws",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "348d2054-9e57-4a04-b805-0bd9a7b90715",
+      "name": "hive_db_location",
+      "serviceType": "hive",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "ce8e961c-1b5f-449f-94b5-ebfa8d80a293",
+      "name": "AtlasGlossaryTermAnchor",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "f68b0f9a-e664-4fd6-82c2-b306af76af88",
+      "name": "AtlasGlossaryCategoryAnchor",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "c2ec01df-1345-4b8c-bf10-f0171a674d3a",
+      "name": "hbase_table_column_families",
+      "serviceType": "hbase",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "16ae56bc-5cb1-4001-b4b2-b1112bd8188c",
+      "name": "AtlasGlossaryValidValue",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "db3ea5a6-c7f5-4b59-aa83-db4198dbdc6b",
+      "name": "ml_project_model_build",
+      "serviceType": "ml",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "be2fa525-30bb-45cd-8863-529dc1f0b722",
+      "name": "AtlasGlossaryPreferredTerm",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "16891607-a418-4505-816f-a9b601167a64",
+      "name": "AtlasGlossaryAntonym",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "fe440da9-8404-43dc-b96d-8f613f54df8c",
+      "name": "aws_s3_object_avro_schema",
+      "serviceType": "aws",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "e1c8e269-a56e-4787-9316-76ac2d911102",
+      "name": "kafka_topic_avroSchema",
+      "serviceType": "kafka",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "1d2abcad-00fe-4a59-9da0-44c4b8831fc8",
+      "name": "rdbms_table_indexes",
+      "serviceType": "rdbms",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "68ed85f0-2beb-452d-b521-db9c1e19944c",
+      "name": "AtlasGlossarySemanticAssignment",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "b141f849-947f-4352-ae6a-d94319f9294c",
+      "name": "iceberg_db_ddl_queries",
+      "serviceType": "iceberg",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "2b557ee5-ffaf-4125-9c8c-765be68c2c27",
+      "name": "aws_s3_pseudo_dir_avro_schema",
+      "serviceType": "aws",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "612b61eb-5be8-4605-abf1-0c90c42cf113",
+      "name": "spark_ml_pipeline_ml_directory",
+      "serviceType": "spark",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "89de24e5-d707-43fb-87b0-4a5d184ced90",
+      "name": "gcp_storage_parent_children",
+      "serviceType": "gcp",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "96e9433c-64af-4692-b1c9-48b79b80b3ad",
+      "name": "AtlasGlossaryRelatedTerm",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "1acf1d6c-998f-413a-838b-94d3e8be6516",
+      "name": "spark_ml_pipeline_dataset",
+      "serviceType": "spark",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "62b8c0d4-5bfd-48db-a22c-ea08a7053479",
+      "name": "process_dataset_outputs",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "1e6059b3-f7b3-4801-9a89-b531359bcd35",
+      "name": "iceberg_table_db",
+      "serviceType": "iceberg",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "cc399542-8c18-41a1-96e4-34b64726544d",
+      "name": "dataset_process_inputs",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "adcb0bdb-c9cc-45c1-9e51-2fe6c47249ad",
+      "name": "aws_s3_v2_container_contained",
+      "serviceType": "aws",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "10f96bae-a511-443f-9a2b-8b187bd1a162",
+      "name": "aws_s3_pseudo_dir_aws_objects",
+      "serviceType": "aws",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "7a4bb2cf-9031-447e-b73c-d985543a3647",
+      "name": "hive_table_ddl_queries",
+      "serviceType": "hive",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "b414d2be-59ca-469d-af94-3cedcadf3e38",
+      "name": "rdbms_instance_databases",
+      "serviceType": "rdbms",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "281e75e9-7f7b-4687-8f00-984b72ef1501",
+      "name": "spark_table_db",
+      "serviceType": "spark",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "4e527760-9da8-4a8f-8aee-f53bcd2c3458",
+      "name": "spark_table_storagedesc",
+      "serviceType": "spark",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "14cde0fb-f04a-4110-8407-1ae274ae1f9b",
+      "name": "impala_process_process_executions",
+      "serviceType": "impala",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "f897b9e4-0a9b-4378-8f40-d4c5f5613019",
+      "name": "hive_process_process_executions",
+      "serviceType": "hive",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "9d253ebf-0859-4d60-8d72-c3c0cbe6c963",
+      "name": "AtlasGlossaryIsARelationship",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "5f900a8d-517e-46ed-8aea-18689796b2d3",
+      "name": "rdbms_index_columns",
+      "serviceType": "rdbms",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "495254a6-171d-43a3-9fb3-04f65f5868ac",
+      "name": "iceberg_table_storagedesc",
+      "serviceType": "iceberg",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "65c3d2ee-c4eb-44c9-980b-7c0c99f9f9db",
+      "name": "spark_process_column_lineages",
+      "serviceType": "spark",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "a7025f79-ae80-47ce-a9af-d65ebd24f4ef",
+      "name": "AtlasGlossaryTermCategorization",
+      "serviceType": "atlas_core",
+      "category": "RELATIONSHIP"
+    },
+    {
+      "guid": "7cc64b41-7633-41d0-8dde-c225c2dc1b78",
+      "name": "hive_table_db",
+      "serviceType": "hive",
+      "category": "RELATIONSHIP"
+    }
+  ]

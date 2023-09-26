@@ -1,0 +1,42 @@
+{
+  "structDefs": [
+      {
+          "category": "STRUCT",
+          "createdBy": "root",
+          "updatedBy": "root",
+          "createTime": 1671133410916,
+          "updateTime": 1671133426489,
+          "version": 2,
+          "name": "iceberg_order",
+          "description": "iceberg_order",
+          "typeVersion": "1.1",
+          "serviceType": "iceberg",
+          "attributeDefs": [
+              {
+                  "name": "order",
+                  "typeName": "int",
+                  "isOptional": false,
+                  "cardinality": "SINGLE",
+                  "valuesMinCount": 1,
+                  "valuesMaxCount": 1,
+                  "isUnique": false,
+                  "isIndexable": false,
+                  "includeInNotification": false,
+                  "searchWeight": -1
+              },
+              {
+                  "name": "col",
+                  "typeName": "string",
+                  "isOptional": false,
+                  "cardinality": "SINGLE",
+                  "valuesMinCount": 1,
+                  "valuesMaxCount": 1,
+                  "isUnique": false,
+                  "isIndexable": false,
+                  "includeInNotification": false,
+                  "searchWeight": -1
+              }
+          ]
+      }
+  ]
+}

@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+  name: kafka-connect-ha.raffles.com.vn
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: kafka-connect-ha.raffles.com.vn
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: connect
+            port:
+              number: 8083
+

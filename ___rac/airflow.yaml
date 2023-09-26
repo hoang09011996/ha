@@ -1,0 +1,68 @@
+apiVersion: "sparkoperator.k8s.io/v1beta2"
+kind: SparkApplication
+metadata:
+    name: spark-airflow-cdc-customer-landingzone
+    namespace: spark-operator
+spec:
+    type: Python
+    pythonVersion: "3"
+    mode: cluster
+    image: "quanghuy98/spark-k8s:1.0.19"
+    imagePullPolicy: Always
+    mainApplicationFile: local:///app/etlinit_.py
+    sparkVersion: "3.3.2"
+    restartPolicy:
+        type: OnFailure
+        onFailureRetries: 3
+        onFailureRetryInterval: 10
+        onSubmissionFailureRetries: 5
+        onSubmissionFailureRetryInterval: 20
+    driver:
+        cores: 1
+        memory: "1024m"
+        labels:
+            version: 3.3.2
+        serviceAccount: my-release-spark
+        env:
+            -   name: AWS_REGION
+                value: us-east-1
+            -   name: AWS_ACCESS_KEY_ID
+                value: rafflesit
+            -   name: AWS_SECRET_ACCESS_KEY
+                value: rafflesit
+            -   name: ETL_DATE
+                value: "20220930"
+            -   name: ETL_PATH
+                value: landing/cdc_customer
+    executor:
+        cores: 2
+        instances: 2
+        memory: "2048m"
+        labels:
+            version: 3.3.2
+        env:
+            -   name: AWS_REGION
+                valueFrom:
+                    secretKeyRef:
+                        name: s3-secret
+                        key: AWS_REGION
+            -   name: AWS_ACCESS_KEY_ID
+                valueFrom:
+                    secretKeyRef:
+                        name: s3-secret
+                        key: AWS_ACCESS_KEY_ID
+            -   name: AWS_SECRET_ACCESS_KEY
+                valueFrom:
+                    secretKeyRef:
+                        name: s3-secret
+                        key: AWS_SECRET_ACCESS_KEY
+            -   name: AWS_S3_ENDPOINT
+                valueFrom:
+                    secretKeyRef:
+                        name: s3-secret
+                        key: AWS_S3_ENDPOINT
+            -   name: ETL_DATE
+                value: "20220930"
+            -   name: ETL_PATH
+                value: landing/cdc_customer
+

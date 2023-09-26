@@ -1,0 +1,34 @@
+{
+    "relationshipDefs": [
+        {
+            "category": "RELATIONSHIP",
+            "createdBy": "root",
+            "updatedBy": "root",
+            "createTime": 1671133411022,
+            "updateTime": 1671133411022,
+            "version": 1,
+            "name": "iceberg_table_db",
+            "description": "iceberg_table_db",
+            "typeVersion": "1.2",
+            "serviceType": "iceberg",
+            "attributeDefs": [],
+            "relationshipCategory": "AGGREGATION",
+            "relationshipLabel": "__iceberg_table.db",
+            "propagateTags": "NONE",
+            "endDef1": {
+                "type": "iceberg_table",
+                "name": "db",
+                "isContainer": false,
+                "cardinality": "SINGLE",
+                "isLegacyAttribute": true
+            },
+            "endDef2": {
+                "type": "iceberg_db",
+                "name": "tables",
+                "isContainer": true,
+                "cardinality": "SET",
+                "isLegacyAttribute": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "entity": {
+        "typeName": "iceberg_column_lineage",
+        "status": "ACTIVE",
+        "attributes": {
+            "owner": "h.a",
+            "qualifiedName": "{{ qualifiedName }}",
+            "description": "{{ qualifiedName }}",
+            "name": "{{ name }}",
+            "inputs": [
+                {% for input in inputs %}
+                {
+                    "typeName": "{{ input.type }}",
+                    "uniqueAttributes": {
+                        "qualifiedName": "{{ input.table_qualified_name }}"
+                    }
+                }{% if not loop.last %},{% endif %}
+                {% endfor %}
+            ],
+            "outputs": [
+                {% for output in outputs %}
+                {
+                    "typeName": "{{ output.type }}",
+                    "uniqueAttributes": {
+                        "qualifiedName": "{{ output.table_qualified_name }}"
+                    }
+                }{% if not loop.last %},{% endif %}
+                {% endfor %}
+            ],
+            "query":
+                {
+                    "typeName": "{{ query.type }}",
+                    "uniqueAttributes": {
+                        "qualifiedName": "{{ query.table_qualified_name }}"
+                    }
+                },
+            "depenendencyType": "",
+            "expression": ""
+        }
+    }
+}

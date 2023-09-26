@@ -1,0 +1,33 @@
+{
+    "relationshipDefs": [
+        {
+            "category": "RELATIONSHIP",
+            "createdBy": "root",
+            "updatedBy": "root",
+            "createTime": 1671133411069,
+            "updateTime": 1671133411069,
+            "version": 1,
+            "name": "iceberg_db_ddl_queries",
+            "description": "iceberg_db_ddl_queries",
+            "typeVersion": "1.0",
+            "serviceType": "iceberg",
+            "attributeDefs": [],
+            "relationshipCategory": "COMPOSITION",
+            "propagateTags": "NONE",
+            "endDef1": {
+                "type": "iceberg_db",
+                "name": "ddlQueries",
+                "isContainer": true,
+                "cardinality": "SET",
+                "isLegacyAttribute": false
+            },
+            "endDef2": {
+                "type": "iceberg_db_ddl",
+                "name": "db",
+                "isContainer": false,
+                "cardinality": "SINGLE",
+                "isLegacyAttribute": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+# logs_pvc.yml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: open-metadata
+  name: openmetadata-dependencies-logs
+  labels:
+    app: airflow
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi

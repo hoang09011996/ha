@@ -1,0 +1,146 @@
+{
+    "entityDefs": [
+        {
+            "category": "ENTITY",
+            "createdBy": "root",
+            "updatedBy": "root",
+            "createTime": 1671133410984,
+            "updateTime": 1671133459013,
+            "version": 5,
+            "name": "iceberg_db",
+            "description": "iceberg_db",
+            "typeVersion": "1.5",
+            "serviceType": "iceberg",
+            "attributeDefs": [
+                {
+                    "name": "clusterName",
+                    "typeName": "string",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 1,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": true,
+                    "includeInNotification": true,
+                    "searchWeight": 9
+                },
+                {
+                    "name": "location",
+                    "typeName": "string",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": 5
+                },
+                {
+                    "name": "parameters",
+                    "typeName": "map<string,string>",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "ownerType",
+                    "typeName": "iceberg_principal_type",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "managedLocation",
+                    "typeName": "string",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                }
+            ],
+            "superTypes": [
+                "Asset"
+            ],
+            "subTypes": [],
+            "relationshipAttributeDefs": [
+                {
+                    "name": "tables",
+                    "typeName": "array<iceberg_table>",
+                    "isOptional": true,
+                    "cardinality": "SET",
+                    "valuesMinCount": -1,
+                    "valuesMaxCount": -1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "iceberg_table_db",
+                    "isLegacyAttribute": false
+                },
+                {
+                    "name": "ddlQueries",
+                    "typeName": "array<iceberg_db_ddl>",
+                    "isOptional": true,
+                    "cardinality": "SET",
+                    "valuesMinCount": -1,
+                    "valuesMaxCount": -1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "constraints": [
+                        {
+                            "type": "ownedRef"
+                        }
+                    ],
+                    "relationshipTypeName": "iceberg_db_ddl_queries",
+                    "isLegacyAttribute": false
+                },
+                {
+                    "name": "meanings",
+                    "typeName": "array<AtlasGlossaryTerm>",
+                    "isOptional": true,
+                    "cardinality": "SET",
+                    "valuesMinCount": -1,
+                    "valuesMaxCount": -1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "AtlasGlossarySemanticAssignment",
+                    "isLegacyAttribute": false
+                },
+                {
+                    "name": "locationPath",
+                    "typeName": "Path",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": -1,
+                    "valuesMaxCount": -1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "iceberg_db_location",
+                    "isLegacyAttribute": false
+                }
+            ],
+            "businessAttributeDefs": {}
+        }
+    ]
+}

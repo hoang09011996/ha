@@ -1,0 +1,40 @@
+{
+    "entity": {
+        "typeName": "iceberg_process",
+        "status": "ACTIVE",
+        "attributes": {
+            "owner": "h.a",
+            "qualifiedName": "{{ qualifiedName }}",
+            "description": "{{ name }}",
+            "name": "{{ name }}",
+            "inputs": [
+                {% for input in inputs %}
+                {
+                    "typeName": "{{ input.type }}",
+                    "uniqueAttributes": {
+                        "qualifiedName": "{{ input.table_qualified_name }}"
+                    }
+                }{% if not loop.last %},{% endif %}
+                {% endfor %}
+            ],
+            "outputs": [
+                {% for output in outputs %}
+                {
+                    "typeName": "{{ output.type }}",
+                    "uniqueAttributes": {
+                        "qualifiedName": "{{ output.table_qualified_name }}"
+                    }
+                }{% if not loop.last %},{% endif %}
+                {% endfor %}
+            ],
+            "startTime": "1",
+            "endTime": "1",
+            "userName": "1",
+            "operationType": "",
+            "queryText": "{{ queryText }}",
+            "queryPlan": "",
+            "queryId": "{{ queryId }}",
+            "clusterName": ""
+        }
+    }
+}

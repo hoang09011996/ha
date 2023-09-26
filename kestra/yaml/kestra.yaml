@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: kestra-data-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: kestra
+spec:
+  selector:
+    matchLabels:
+      app: kestra
+  replicas: 1
+  serviceName: kestra
+  template:
+    metadata:
+      labels:
+        app: kestra
+    spec:                            
+      containers:
+        - name: kestra
+          image: kestra/kestra:latest-full
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - mountPath: /var/kestra
+              name: kestra-data
+      volumes:
+        - name: kestra-data
+          persistentVolumeClaim:
+            claimName: kestra-data-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kestra
+spec:
+  type: LoadBalancer
+  selector:
+    app: kestra
+  ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
+      name: kestra
+

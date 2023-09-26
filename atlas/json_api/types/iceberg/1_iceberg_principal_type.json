@@ -1,0 +1,30 @@
+{
+  "enumDefs": [
+      {
+          "category": "ENUM",
+          "createdBy": "root",
+          "updatedBy": "root",
+          "createTime": 1671133410894,
+          "updateTime": 1671133426140,
+          "version": 2,
+          "name": "iceberg_principal_type",
+          "description": "iceberg_principal_type",
+          "typeVersion": "1.1",
+          "serviceType": "iceberg",
+          "elementDefs": [
+              {
+                  "value": "USER",
+                  "ordinal": 1
+              },
+              {
+                  "value": "ROLE",
+                  "ordinal": 2
+              },
+              {
+                  "value": "GROUP",
+                  "ordinal": 3
+              }
+          ]
+      }
+  ]
+}

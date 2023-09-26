@@ -1,0 +1,52 @@
+{
+    "entityDefs": [
+        {
+            "category": "ENTITY",
+            "createdBy": "root",
+            "updatedBy": "root",
+            "createTime": 1671133411018,
+            "updateTime": 1671133411018,
+            "version": 1,
+            "name": "iceberg_table_ddl",
+            "description": "iceberg_table_ddl",
+            "typeVersion": "1.0",
+            "serviceType": "iceberg",
+            "attributeDefs": [],
+            "superTypes": [
+                "ddl"
+            ],
+            "subTypes": [],
+            "relationshipAttributeDefs": [
+                {
+                    "name": "meanings",
+                    "typeName": "array<AtlasGlossaryTerm>",
+                    "isOptional": true,
+                    "cardinality": "SET",
+                    "valuesMinCount": -1,
+                    "valuesMaxCount": -1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "AtlasGlossarySemanticAssignment",
+                    "isLegacyAttribute": false
+                },
+                {
+                    "name": "table",
+                    "typeName": "iceberg_table",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": -1,
+                    "valuesMaxCount": -1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "iceberg_table_ddl_queries",
+                    "isLegacyAttribute": false
+                }
+            ],
+            "businessAttributeDefs": {}
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "entityDefs": [
+        {
+            "category": "ENTITY",
+            "createdBy": "root",
+            "updatedBy": "root",
+            "createTime": 1671133410994,
+            "updateTime": 1671133429105,
+            "version": 2,
+            "name": "iceberg_column_lineage",
+            "description": "iceberg_column_lineage",
+            "typeVersion": "1.1",
+            "serviceType": "iceberg",
+            "attributeDefs": [
+                {
+                    "name": "depenendencyType",
+                    "typeName": "string",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 1,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "expression",
+                    "typeName": "string",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                }
+            ],
+            "superTypes": [
+                "Process"
+            ],
+            "subTypes": [],
+            "relationshipAttributeDefs": [
+                {
+                    "name": "outputs",
+                    "typeName": "array<DataSet>",
+                    "isOptional": true,
+                    "cardinality": "SET",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 2147483647,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "process_dataset_outputs",
+                    "isLegacyAttribute": true
+                },
+                {
+                    "name": "inputs",
+                    "typeName": "array<DataSet>",
+                    "isOptional": true,
+                    "cardinality": "SET",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 2147483647,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "dataset_process_inputs",
+                    "isLegacyAttribute": true
+                },
+                {
+                    "name": "query",
+                    "typeName": "iceberg_process",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": -1,
+                    "valuesMaxCount": -1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "iceberg_process_column_lineage",
+                    "isLegacyAttribute": true
+                },
+                {
+                    "name": "meanings",
+                    "typeName": "array<AtlasGlossaryTerm>",
+                    "isOptional": true,
+                    "cardinality": "SET",
+                    "valuesMinCount": -1,
+                    "valuesMaxCount": -1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "AtlasGlossarySemanticAssignment",
+                    "isLegacyAttribute": false
+                }
+            ],
+            "businessAttributeDefs": {}
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "relationshipDefs": [
+        {
+            "category": "RELATIONSHIP",
+            "createdBy": "root",
+            "updatedBy": "root",
+            "createTime": 1671133411035,
+            "updateTime": 1671133411035,
+            "version": 1,
+            "name": "iceberg_table_partitionkeys",
+            "description": "iceberg_table_partitionkeys",
+            "typeVersion": "1.2",
+            "serviceType": "iceberg",
+            "attributeDefs": [],
+            "relationshipCategory": "COMPOSITION",
+            "relationshipLabel": "__iceberg_table.partitionKeys",
+            "propagateTags": "NONE",
+            "endDef1": {
+                "type": "iceberg_table",
+                "name": "partitionKeys",
+                "isContainer": true,
+                "cardinality": "SET",
+                "isLegacyAttribute": true
+            },
+            "endDef2": {
+                "type": "iceberg_column",
+                "name": "table",
+                "isContainer": false,
+                "cardinality": "SINGLE",
+                "isLegacyAttribute": true
+            }
+        }
+    ]
+}

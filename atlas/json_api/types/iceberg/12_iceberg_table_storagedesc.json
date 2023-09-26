@@ -1,0 +1,173 @@
+{
+    "entityDefs": [
+        {
+            "category": "ENTITY",
+            "createdBy": "root",
+            "updatedBy": "root",
+            "createTime": 1671133410972,
+            "updateTime": 1671133445037,
+            "version": 3,
+            "name": "iceberg_storagedesc",
+            "description": "iceberg_storagedesc",
+            "typeVersion": "1.2",
+            "serviceType": "iceberg",
+            "attributeDefs": [
+                {
+                    "name": "location",
+                    "typeName": "string",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": 5
+                },
+                {
+                    "name": "inputFormat",
+                    "typeName": "string",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "outputFormat",
+                    "typeName": "string",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "compressed",
+                    "typeName": "boolean",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 1,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "numBuckets",
+                    "typeName": "int",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "serdeInfo",
+                    "typeName": "iceberg_serde",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "bucketCols",
+                    "typeName": "array<string>",
+                    "isOptional": true,
+                    "cardinality": "SET",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 2147483647,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "sortCols",
+                    "typeName": "array<iceberg_order>",
+                    "isOptional": true,
+                    "cardinality": "SET",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 2147483647,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "parameters",
+                    "typeName": "map<string,string>",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                },
+                {
+                    "name": "storedAsSubDirectories",
+                    "typeName": "boolean",
+                    "isOptional": true,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": 0,
+                    "valuesMaxCount": 1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1
+                }
+            ],
+            "superTypes": [
+                "Referenceable"
+            ],
+            "subTypes": [],
+            "relationshipAttributeDefs": [
+                {
+                    "name": "meanings",
+                    "typeName": "array<AtlasGlossaryTerm>",
+                    "isOptional": true,
+                    "cardinality": "SET",
+                    "valuesMinCount": -1,
+                    "valuesMaxCount": -1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "AtlasGlossarySemanticAssignment",
+                    "isLegacyAttribute": false
+                },
+                {
+                    "name": "table",
+                    "typeName": "iceberg_table",
+                    "isOptional": false,
+                    "cardinality": "SINGLE",
+                    "valuesMinCount": -1,
+                    "valuesMaxCount": -1,
+                    "isUnique": false,
+                    "isIndexable": false,
+                    "includeInNotification": false,
+                    "searchWeight": -1,
+                    "relationshipTypeName": "iceberg_table_storagedesc",
+                    "isLegacyAttribute": true
+                }
+            ],
+            "businessAttributeDefs": {}
+        }
+    ]
+}
